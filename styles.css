@@ -1,8 +1,23 @@
-aside {
-  background-color: aqua;
-  height: 50px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.winter-image {
+  background-image: url(./assets/snow-house.jpg);
+  height: 100vh;
+  width: 30vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 main {
   background-color: whitesmoke;
-  height: 50px;
+  width: 70vw;
 }
