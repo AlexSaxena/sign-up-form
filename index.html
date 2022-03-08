@@ -22,24 +22,60 @@
       </section>
       <div class="form-container">
         <form action="#" method="post" class="sign-up">
+          <h2>Sign Me Up!</h2>
           <div id="Fname">
-            <label for="firstName">First Name: </label>
-            <input type="text" name="firstName" id="Fname" />
-            <label for="lastName">Last Name: </label>
-            <input type="text" name="lastName" id="Lname" />
+            <input
+              type="text"
+              name="firstName"
+              class="form-inputs"
+              id="Fname"
+              placeholder="First name *"
+              required
+            />
+            <input
+              type="text"
+              name="lastName"
+              class="form-inputs"
+              id="Lname"
+              placeholder="Last Name"
+            />
           </div>
           <div id="Fcontact">
-            <label for="mail">E-mail: </label>
-            <input type="email" name="mail" id="Email" />
-            <label for="tele">Telephone Nr: </label>
-            <input type="tel" name="tele" id="telnr" />
+            <input
+              type="email"
+              name="mail"
+              class="form-inputs"
+              id="Email"
+              placeholder="E-mail *"
+              required
+            />
+            <input
+              type="tel"
+              name="tele"
+              class="form-inputs"
+              id="telnr"
+              placeholder="Telephone Nr"
+            />
           </div>
           <div id="Fpassword">
-            <label for="password">Enter Password:</label>
-            <input type="password" name="password" id="pass" />
-            <label for="confirm">Confirm Password:</label>
-            <input type="password" name="confirm" id="pw-confirm" />
+            <input
+              type="password"
+              name="password"
+              class="form-inputs"
+              id="pass"
+              placeholder="Password *"
+              required
+            />
+            <input
+              type="password"
+              name="confirm"
+              class="form-inputs"
+              id="pw-confirm"
+              placeholder="Confirm Password *"
+              required
+            />
           </div>
+          <span>Already a member? Click <a href="#">Here!</a></span>
           <input type="submit" value="Register!" />
         </form>
       </div>
