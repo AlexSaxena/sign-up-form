@@ -1,4 +1,6 @@
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 body {
@@ -59,11 +61,34 @@ main {
 }
 .sign-up {
   display: flex;
+  flex-wrap: wrap;
   height: 100%;
-  width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 5%;
   border: solid orange 2px;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+  padding: 5px;
+  border: 0;
+  border-bottom: solid black 1px;
+  font-size: 1.3rem;
+}
+input[type="text"]:hover,
+input[type="tel"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover {
+  border-bottom: 1px solid rgb(0, 153, 255);
+}
+input:focus,
+input:active {
+  outline: 0;
+  border-bottom: 2px solid rgb(0, 153, 255);
+}
+.form-inputs {
+  margin: 5px;
 }
