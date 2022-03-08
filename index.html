@@ -21,8 +21,8 @@
         </h1>
       </section>
       <div class="form-container">
-        <form action="#" method="post" class="sign-up">
-          <h2>Sign Me Up!</h2>
+        <form action="#" method="post" id="sign-up-form" class="sign-up">
+          <span id="form-intro">Sign Me Up!</span>
           <div id="Fname">
             <input
               type="text"
@@ -75,11 +75,16 @@
               required
             />
           </div>
-          <span>Already a member? Click <a href="#">Here!</a></span>
-          <input type="submit" value="Register!" />
         </form>
       </div>
-      <section class="main-outro">Not sure yet</section>
+      <section class="main-outro">
+        <button type="submit" form="sign-up-form" id="btn-sign-up">
+          Register!
+        </button>
+        <span id="span-member"
+          >Already a member? Click <a href="#">Here!</a></span
+        >
+      </section>
     </main>
   </body>
 </html>
