@@ -14,22 +14,32 @@
     </aside>
     <main>
       <section class="main-intro">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-        ducimus, debitis animi deleniti reprehenderit rem sit qui fugiat quam
-        dignissimos.
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          ducimus, debitis animi deleniti reprehenderit rem sit qui fugiat quam
+          dignissimos.
+        </h1>
       </section>
       <div class="form-container">
         <form action="#" method="post" class="sign-up">
-          <label for="firstName">First Name: </label>
-          <input type="text" name="firstName" id="Fname" />
-          <label for="lastName">Last Name: </label>
-          <input type="text" name="lastName" id="Lname" />
-          <label for="mail">E-mail: </label>
-          <input type="email" name="mail" id="Email" />
-          <label for="password">Enter Password:</label>
-          <input type="password" name="password" id="pass" />
-          <label for="confirm">Confirm Password:</label>
-          <input type="password" name="confirm" id="pw-confirm" />
+          <div id="Fname">
+            <label for="firstName">First Name: </label>
+            <input type="text" name="firstName" id="Fname" />
+            <label for="lastName">Last Name: </label>
+            <input type="text" name="lastName" id="Lname" />
+          </div>
+          <div id="Fcontact">
+            <label for="mail">E-mail: </label>
+            <input type="email" name="mail" id="Email" />
+            <label for="tele">Telephone Nr: </label>
+            <input type="tel" name="tele" id="telnr" />
+          </div>
+          <div id="Fpassword">
+            <label for="password">Enter Password:</label>
+            <input type="password" name="password" id="pass" />
+            <label for="confirm">Confirm Password:</label>
+            <input type="password" name="confirm" id="pw-confirm" />
+          </div>
           <input type="submit" value="Register!" />
         </form>
       </div>
