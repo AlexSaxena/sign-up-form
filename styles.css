@@ -41,23 +41,26 @@ aside {
   background-size: cover;
 }
 main {
-  background-color: rgb(230, 230, 230);
+  background-color: rgba(228, 226, 226, 0.603);
   width: 70vw;
   display: flex;
   flex-direction: column;
-  /* gap: 50px; */
 }
 .main-intro {
-  height: 30%;
-  border: solid black 3px;
+  height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+#form-intro {
+  font-size: 2.5rem;
+}
 .form-container {
-  height: 40%;
-  border: solid green 3px;
+  min-height: 30vh;
+  max-height: 60vh;
+  width: 70vw;
   background-color: white;
+  box-shadow: 3px 3px 3px 3px rgb(114, 114, 114);
 }
 .sign-up {
   display: flex;
@@ -67,7 +70,6 @@ main {
   align-items: center;
   justify-content: center;
   gap: 5%;
-  border: solid orange 2px;
 }
 input[type="text"],
 input[type="tel"],
@@ -76,7 +78,7 @@ input[type="password"] {
   padding: 5px;
   border: 0;
   border-bottom: solid black 1px;
-  font-size: 1.3rem;
+  font-size: 1.3em;
 }
 input[type="text"]:hover,
 input[type="tel"]:hover,
@@ -91,4 +93,33 @@ input:active {
 }
 .form-inputs {
   margin: 5px;
+}
+.main-outro {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 5%;
+}
+#btn-sign-up {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 12px 24px;
+  border: 0;
+  color: #3a4149;
+  background: #d4dce2;
+  line-height: 1.15;
+  font-size: 16px;
+  width: 300px;
+  margin-left: 20px;
+}
+#btn-sign-up:hover {
+  transition: all 0.1s ease;
+  box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+}
+#span-member {
+  font-size: 1.2rem;
+  margin-left: 20px;
 }
