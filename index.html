@@ -103,6 +103,7 @@
       function checkPassword() {
         if (password.value != confirmPassword.value) {
           let msg = document.querySelector(".password-msg");
+          msg.style.color = "red";
           msg.innerText = "Password Does Not Match!";
         } else if (
           password.value == confirmPassword.value &&

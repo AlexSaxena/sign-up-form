@@ -52,6 +52,10 @@ main {
   justify-content: center;
   align-items: center;
 }
+h1 {
+  width: 80%;
+  line-height: 2.5rem;
+}
 #form-intro {
   font-size: 2.5rem;
 }
@@ -105,12 +109,12 @@ input:active {
   outline: none;
   cursor: pointer;
   font-weight: 600;
-  border-radius: 3px;
+  border-radius: 25px;
   padding: 12px 24px;
   border: 0;
   color: #3a4149;
   background: #d4dce2;
-  line-height: 1.15;
+  line-height: 2;
   font-size: 16px;
   width: 300px;
   margin-left: 20px;
