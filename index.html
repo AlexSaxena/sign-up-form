@@ -22,7 +22,13 @@
         </h1>
       </section>
       <div class="form-container">
-        <form action="#" method="post" id="sign-up-form" class="sign-up">
+        <form
+          action="#"
+          method="post"
+          id="sign-up-form"
+          class="sign-up"
+          onsubmit="event.preventDefault();"
+        >
           <span id="form-intro">Sign Me Up!</span>
           <div id="Fname">
             <input
@@ -85,7 +91,7 @@
       </div>
       <section class="main-outro">
         <button
-          type="button"
+          type="submit"
           form="sign-up-form"
           id="btn-sign-up"
           onclick="checkPassword()"
