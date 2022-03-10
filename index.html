@@ -15,6 +15,7 @@
     <main>
       <section class="main-intro">
         <h1>
+          This is not a real online Service! <br />
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
           ducimus, debitis animi deleniti reprehenderit rem sit qui fugiat quam
           dignissimos.
@@ -30,6 +31,7 @@
               class="form-inputs"
               id="Fname"
               placeholder="First name *"
+              minlength="2"
               required
             />
             <input
@@ -38,6 +40,7 @@
               class="form-inputs"
               id="Lname"
               placeholder="Last Name"
+              minlength="2"
             />
           </div>
           <div id="Fcontact">
@@ -48,13 +51,15 @@
               id="Email"
               placeholder="E-mail *"
               required
+              minlength="6"
             />
             <input
               type="tel"
               name="tele"
               class="form-inputs"
               id="telnr"
-              placeholder="Telephone Nr"
+              placeholder="Phone Number"
+              pattern="^\d{10}$"
             />
           </div>
           <div id="Fpassword">
@@ -74,11 +79,17 @@
               placeholder="Confirm Password *"
               required
             />
+            <br /><span class="password-msg"></span>
           </div>
         </form>
       </div>
       <section class="main-outro">
-        <button type="submit" form="sign-up-form" id="btn-sign-up">
+        <button
+          type="button"
+          form="sign-up-form"
+          id="btn-sign-up"
+          onclick="checkPassword()"
+        >
           Register!
         </button>
         <span id="span-member"
@@ -86,5 +97,22 @@
         >
       </section>
     </main>
+    <script>
+      let password = document.getElementById("pass");
+      let confirmPassword = document.getElementById("pw-confirm");
+      function checkPassword() {
+        if (password.value != confirmPassword.value) {
+          let msg = document.querySelector(".password-msg");
+          msg.innerText = "Password Does Not Match!";
+        } else if (
+          password.value == confirmPassword.value &&
+          password.value.length > 1
+        ) {
+          let msg = document.querySelector(".password-msg");
+          msg.style.color = "green";
+          msg.innerText = "Password Match!";
+        }
+      }
+    </script>
   </body>
 </html>
