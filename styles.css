@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:wght@600&display=swap");
 *,
 *:before,
 *:after {
@@ -23,7 +24,7 @@ aside {
   width: 100%;
   color: white;
   border: solid black 0.5px;
-  margin-top: auto;
+  margin-top: 20rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,23 +58,24 @@ h1 {
   line-height: 2.5rem;
 }
 #form-intro {
+  font-family: "Playfair Display", serif;
   font-size: 2.5rem;
+  padding: 2rem;
 }
 .form-container {
   min-height: 30vh;
   max-height: 60vh;
-  width: 70vw;
   background-color: white;
   box-shadow: 3px 3px 3px 3px rgb(114, 114, 114);
 }
 .sign-up {
   display: flex;
-  flex-wrap: wrap;
-  height: 100%;
+  flex-wrap: nowrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 5%;
+  gap: 1.3em;
+  padding-bottom: 0.5em;
 }
 input[type="text"],
 input[type="tel"],
@@ -82,7 +84,7 @@ input[type="password"] {
   padding: 5px;
   border: 0;
   border-bottom: solid black 1px;
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 input[type="text"]:hover,
 input[type="tel"]:hover,
@@ -117,7 +119,7 @@ input:active {
   line-height: 2;
   font-size: 16px;
   width: 300px;
-  margin-left: 20px;
+  margin-left: 9rem;
 }
 #btn-sign-up:hover {
   transition: all 0.1s ease;
@@ -125,5 +127,5 @@ input:active {
 }
 #span-member {
   font-size: 1.2rem;
-  margin-left: 20px;
+  margin-left: 9rem;
 }
